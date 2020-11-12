@@ -1,4 +1,4 @@
-package com.danielkim.soundrecorder.activities;
+package .soundrecorder.activities;
 
 import android.app.Activity;
 import android.os.Bundle;
@@ -9,8 +9,8 @@ import android.support.v4.app.ActivityCompat;
 import android.support.v7.app.ActionBar;
 import android.support.v7.widget.Toolbar;
 
-import com.danielkim.soundrecorder.R;
-import com.danielkim.soundrecorder.fragments.SettingsFragment;
+import .soundrecorder.R;
+import .soundrecorder.fragments.SettingsFragment;
 
 public class SettingsActivity extends android.support.v7.app.ActionBarActivity {
     @Override
