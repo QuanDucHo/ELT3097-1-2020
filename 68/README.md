@@ -2,25 +2,25 @@
 
 1: Hồ Đức Quân
 
-[Activity](https://github.com/QuanDucHo/ELT3097-1-2020/blob/master/68/SoundRecorder/app/src/main/java/com/danielkim/soundrecorder/activities/MainActivity.java)
+[Activity]()
 
 <p align="center">
-  <img width="400" height="800" src="https://github.com/QuanDucHo/ELT3097-1-2020/blob/master/HoDucQuan/Quan.gif">
+  <img width="400" height="800" src="">
 </p>
 
 2: Phạm Tùng Lâm 
 
-[Activity](https://github.com/QuanDucHo/ELT3097-1-2020/blob/master/68/SoundRecorder/app/src/main/java/com/danielkim/soundrecorder/adapters/FileViewerAdapter.java)
+[Activity]()
 
 <p align="center">
-  <img width="400" height="800" src="https://github.com/QuanDucHo/ELT3097-1-2020/blob/master/PhamTungLam/Lam.gif">
+  <img width="400" height="800" src="">
 </p>
 
 3: Nguyễn Vũ Giang Nam
 
-[Activity](https://github.com/QuanDucHo/ELT3097-1-2020/blob/master/68/SoundRecorder/app/src/main/java/com/danielkim/soundrecorder/fragments/LicensesFragment.java)
+[Activity]()
 
 
 <p align="center">
-  <img width="400" height="800" src="https://github.com/QuanDucHo/ELT3097-1-2020/blob/master/NguyenVugiangNam/Nam.gif">
+  <img width="400" height="800" src="">
 </p>
