@@ -1,7 +1,5 @@
 package com.nhom68.quizmath.model;
 
-
-
 public class User {
     private String name;
 
