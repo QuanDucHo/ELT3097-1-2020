@@ -8,7 +8,6 @@ import android.widget.Button;
 import android.widget.TextView;
 
 public class OverActivity extends AppCompatActivity implements View.OnClickListener {
-    private TextView txtGameOver;
     private TextView txtYourScore;
     private Button btnTryAgain;
     private Button btnHome;
@@ -23,7 +22,7 @@ public class OverActivity extends AppCompatActivity implements View.OnClickListe
     }
 
     private void initializeComponent() {
-        txtGameOver = (TextView) findViewById(R.id.txtGameOver);
+        TextView txtGameOver = (TextView) findViewById(R.id.txtGameOver);
         txtYourScore = (TextView) findViewById(R.id.txtYourScore);
         btnTryAgain = (Button) findViewById(R.id.btnTryAgain);
         btnHome = (Button) findViewById(R.id.btnHome);
