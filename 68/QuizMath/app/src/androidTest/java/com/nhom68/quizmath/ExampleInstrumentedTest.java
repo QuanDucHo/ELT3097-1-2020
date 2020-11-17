@@ -13,7 +13,8 @@ import static org.junit.Assert.*;
 @RunWith(AndroidJUnit4.class)
 public class ExampleInstrumentedTest {
     @Test
-    public void useAppContext() {
+    public void useAppContext() throws Exception
+    {
         Context appContext = InstrumentationRegistry.getInstrumentation().getTargetContext();
         assertEquals("com.nhom68.quizmath", appContext.getPackageName());
     }
