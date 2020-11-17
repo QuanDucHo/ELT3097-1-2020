@@ -11,7 +11,6 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.nhom68.quizmath.model.Question;
-import com.nhom68.crazymath.model.User;
 
 public class PlayActivity extends AppCompatActivity implements View.OnClickListener {
     public static final int MAX_TIMER = 10;
