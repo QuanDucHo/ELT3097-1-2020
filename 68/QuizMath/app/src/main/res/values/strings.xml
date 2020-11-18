@@ -6,7 +6,6 @@
     <string name="score" formatted="false">SCORE: </string>
     <string name="best" formatted="false">BEST: 100</string>
     <string name="play">PLAY</string>
-    <string name="more">MORE</string>
     <string name="game_over">GAME OVER</string>
     <string name="your_score" formatted="false">YOUR SCORE\n</string>
     <string name="try_again">TRY AGAIN?</string>
