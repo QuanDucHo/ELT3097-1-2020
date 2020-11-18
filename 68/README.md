@@ -13,7 +13,7 @@
 [Activity](https://github.com/QuanDucHo/ELT3097-1-2020/blob/master/PhamTungLam/Lam.gif)
 
 <p align="center">
-  <img width="400" height="800" src="">
+  <img width="400" height="800" src="https://github.com/QuanDucHo/ELT3097-1-2020/blob/master/PhamTungLam/Lam.gif">
 </p>
 
 3: Nguyễn Vũ Giang Nam
@@ -22,5 +22,5 @@
 
 
 <p align="center">
-  <img width="400" height="800" src="">
+  <img width="400" height="800" src="https://github.com/QuanDucHo/ELT3097-1-2020/blob/master/NguyenVugiangNam/124127827_816683935839371_8859940459814584087_n.gif">
 </p>
