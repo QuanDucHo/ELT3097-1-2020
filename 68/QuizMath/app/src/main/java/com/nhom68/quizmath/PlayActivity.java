@@ -1,5 +1,6 @@
 package com.nhom68.quizmath;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
@@ -30,6 +31,7 @@ public class PlayActivity extends AppCompatActivity implements View.OnClickListe
     private Question mQuestion;
     private User mUser;
 
+    @SuppressLint("HandlerLeak")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -40,7 +42,7 @@ public class PlayActivity extends AppCompatActivity implements View.OnClickListe
             @Override
             public void handleMessage(Message message) {
                 switch (message.what) {
-                    case com.nhom68.crazymath.MessageConstant.UPDATE_QUESTION:
+                    case com.nhom68.quizmath.MessageConstant.UPDATE_QUESTION:
                         mTimer = MAX_TIMER;
                         String question = mQuestion.show();
 
@@ -48,18 +50,18 @@ public class PlayActivity extends AppCompatActivity implements View.OnClickListe
                         txtQuestion.setText(question);
                         break;
 
-                    case com.nhom68.crazymath.MessageConstant.UPDATE_TIMER:
+                    case com.nhom68.quizmath.MessageConstant.UPDATE_TIMER:
                         mTimer = message.arg1;
                         txtTimer.setText(String.valueOf(mTimer));
                         break;
 
-                    case com.nhom68.crazymath.MessageConstant.QUESTION_TRUE:
+                    case com.nhom68.quizmath.MessageConstant.QUESTION_TRUE:
                         mScore = mUser.getScore();
                         txtScore.setText("Score: " + String.valueOf(mScore));
                         Toast.makeText(PlayActivity.this, "Dung", Toast.LENGTH_SHORT).show();
                         break;
 
-                    case com.nhom68.crazymath.MessageConstant.QUESTION_FALSE:
+                    case com.nhom68.quizmath.MessageConstant.QUESTION_FALSE:
                         Toast.makeText(PlayActivity.this, "Sai", Toast.LENGTH_SHORT).show();
                         break;
 
@@ -97,7 +99,7 @@ public class PlayActivity extends AppCompatActivity implements View.OnClickListe
             public void run() {
                 while (mTimer > -1 && isRunning) {
                     Message message = new Message();
-                    message.what = com.nhom68.crazymath.MessageConstant.UPDATE_TIMER;
+                    message.what = com.nhom68.quizmath.MessageConstant.UPDATE_TIMER;
                     message.arg1 = mTimer;
                     handler.sendMessage(message);
 
@@ -141,18 +143,18 @@ public class PlayActivity extends AppCompatActivity implements View.OnClickListe
     private void makeQuestion() {
         checkLevel();
         mQuestion.makeQuestion(mLevel);
-        handler.sendEmptyMessage(com.nhom68.crazymath.MessageConstant.UPDATE_QUESTION);
+        handler.sendEmptyMessage(com.nhom68.quizmath.MessageConstant.UPDATE_QUESTION);
     }
 
     private void checkQuestion(boolean b) {
         if (mQuestion.checkQuestion(b)) {
             mUser.increaseScore();
-            handler.sendEmptyMessage(com.nhom68.crazymath.MessageConstant.QUESTION_TRUE);
+            handler.sendEmptyMessage(com.nhom68.quizmath.MessageConstant.QUESTION_TRUE);
             makeQuestion();
 
         } else {
             isRunning = false;
-            handler.sendEmptyMessage(com.nhom68.crazymath.MessageConstant.QUESTION_FALSE);
+            handler.sendEmptyMessage(com.nhom68.quizmath.MessageConstant.QUESTION_FALSE);
         }
     }
 
