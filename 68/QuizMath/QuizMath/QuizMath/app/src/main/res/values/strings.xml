@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="best_score">BEST SCORE</string>
+    <string name="play">PLAY</string>
+    <string name="try_again">TRY AGAIN?</string>
+    <string name="home">HOME</string>
+    <string name="game_over">Game Over</string>
+    <string name="your_score">Your Score</string>
+    <string name="score">Score</string>
+    <string name="best">Best</string>
+    <string name="app_name">app name</string>
+    <string name="best1">Best: 100</string>
+</resources>
